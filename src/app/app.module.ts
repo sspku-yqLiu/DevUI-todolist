@@ -4,10 +4,12 @@ import { DevUIModule } from 'ng-devui';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
