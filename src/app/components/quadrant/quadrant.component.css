@@ -1,0 +1,50 @@
+.context{
+    /* width: 50%;
+    height: 334px; */
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    
+}
+.context div{
+    flex:1;
+    width: 50%;
+    height: 334px;
+}
+.div1{
+
+    background-color: #F95F5B;
+    /* width: 50%;
+    height: 334px; */
+    padding-left: 5%;
+    padding-right: 2.5%;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+}
+.div2{
+    background-color: #FECC55;
+    /* width: 40%;
+    height: 334px; */
+    padding-left: 5%;
+    padding-right: 2.5%;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+}
+.div3{
+    background-color: #0AD3F4;
+    /* width: 50%;
+    height: 334px; */
+    padding-left: 5%;
+    padding-right: 2.5%;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+}
+.div4{
+    background-color: #E3E5E9;
+    /* width: 50%;
+    height: 334px; */
+    padding-left: 5%;
+    padding-right: 2.5%;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+}

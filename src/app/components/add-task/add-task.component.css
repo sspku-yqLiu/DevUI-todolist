@@ -1,0 +1,43 @@
+/*  */
+header{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5%;
+    font-size: 20px;
+    display: inline-flex;
+    flex-direction: row;
+}
+#back{
+    height:40px;
+    
+}
+.title{
+    margin-top: 10px;
+margin-left:90px;
+}
+textarea{
+    height:120px;
+    width: 100%;
+    margin: 0,10px;
+}
+.repeat{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width:50%;
+    margin: auto,20px;
+    height: 150px;
+    font-size: 20px;
+}
+.right{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+}
