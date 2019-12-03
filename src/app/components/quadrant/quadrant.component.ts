@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-quadrant',
   templateUrl: './quadrant.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuadrantComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+  addtask(){
+    console.log("addtask");
+    this.router.navigateByUrl("/addtask")
   }
 
 }

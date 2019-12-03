@@ -7,29 +7,37 @@ header{
     display: inline-flex;
     flex-direction: row;
 }
+.main{
+    background-color: white;
+}
 #back{
     height:40px;
     
 }
 .title{
     margin-top: 10px;
-margin-left:90px;
+    margin-left:90px;
 }
 textarea{
     height:120px;
     width: 100%;
     margin: 0,10px;
+    border: 0px;
 }
 .repeat{
-    margin-top: 20px;
+    margin-top: 15px;
+    padding: 20px 0;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    background: white;
 }
 .left{
     width:50%;
-    margin: auto,20px;
     height: 150px;
     font-size: 20px;
+    padding-left: 20px;
+    padding-top: 18%;
 }
 .right{
     width: 50%;
@@ -40,4 +48,12 @@ textarea{
 .choose{
     display: flex;
     flex-direction: row;
+}
+.total{
+    background-color: #E8F0FD;
+    height: 667px;
+}
+.submit{
+    text-align: center;
+    padding-top: 50px;
 }

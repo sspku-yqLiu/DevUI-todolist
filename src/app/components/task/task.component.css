@@ -1,0 +1,28 @@
+.left{
+    width: 30%;
+    /* height: 50px; */
+    margin:auto 5px
+}
+:right{
+    width:70%;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.context{
+    display: flex;
+    /* height:150px; */
+    /* background: floralwhite; */
+   /* margin: 8px 16px; */
+}
+#tags{
+    margin-top: 30px;
+    justify-content: space-around;
+}
+#neirong{
+    margin-top: 5px;
+    font-size: 12px;
+}
+#explain{
+    margin-top: 2px;
+    font-size:8px;
+}

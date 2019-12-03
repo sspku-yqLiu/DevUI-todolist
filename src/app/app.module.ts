@@ -7,6 +7,8 @@ import { QuadrantComponent } from './components/quadrant/quadrant.component';
 import { ListComponent } from './components/list/list.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TaskComponent } from './components/task/task.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { HeaderComponent } from './components/header/header.component';
     QuadrantComponent,
     ListComponent,
     AddTaskComponent,
-    HeaderComponent
+    HeaderComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DevUIModule
+    DevUIModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

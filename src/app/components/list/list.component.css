@@ -1,0 +1,28 @@
+.left{
+    width: 30%;
+    height: 50px;
+    margin:auto 5px
+}
+:right{
+    width:70%;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.context{
+    display: flex;
+    height:120px;
+    background: white;
+   margin: 8px 16px;
+}
+#tags{
+    margin-top: 20px;
+    justify-content: space-around;
+}
+#neirong{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.total{
+    background-color: #E8F0FD;
+    height: 667px;
+}
