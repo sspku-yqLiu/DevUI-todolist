@@ -22,8 +22,7 @@ import { SettingComponent } from './setting/setting.component';
     ListComponent,
     AddTaskComponent,
     HeaderComponent,
-    TaskComponent
-
+    TaskComponent,
     TodolistComponent,
     SettingComponent
   ],

@@ -9,11 +9,10 @@ import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodolistComponent } from './todolist/todolist.component';
 const routes: Routes = [
-  {path:'' ,component:QuadrantComponent},
   {path:'Quad' ,component:QuadrantComponent},
   {path:'addtask' ,component:AddTaskComponent},
   {path:'list' ,component:ListComponent},
-    { path:'todolist', component:TodolistComponent },
+  { path:'todolist', component:TodolistComponent },
   { path:'', redirectTo:'/todolist', pathMatch:'full'}
 ];
 
