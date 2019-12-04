@@ -1,9 +1,94 @@
-<div class="header">
-  设置
-</div>
 <div class="content">
-  内容
+  <div class="goals-and-time">
+    <h3>目标和时间</h3>
+    <div class="numoftomatoes">
+      <div class = "numoftomatoes-title">
+        <span><b>目标番茄个数</b></span>
+      </div>
+      <div class = "numoftomatoes-set">
+        <d-slider
+          [(ngModel)]="inputNum"
+          [min]="minNum"
+          [max]="maxNum"
+          [tipsRenderer]="descriptionNum"
+          class="slider"
+        ></d-slider>
+      </div>
+    </div>
+
+    <div class="lengthofwork">
+      <span><b>番茄时长/min</b></span>
+      <d-input-number
+        [min]="minWorkTime"
+        [max]="maxWorkTime"
+        [step]="stepWorkTime"
+        [(ngModel)]="valueWorkTime"
+        (whileValueChanging)="showValueWorkTime($event, 'typing')"
+        (ngModelChange)="showValueWorkTime($event, 'model')"
+        class="input-number-worktime"
+      ></d-input-number>
+    </div>
+    <div class="lengthofrest">
+      <span><b>休息时长/min</b></span>
+      <d-input-number
+        [min]="minRestTime"
+        [max]="maxRestTime"
+        [step]="stepRestTime"
+        [(ngModel)]="valueRestTime"
+        (whileValueChanging)="showValueRestTime($event, 'typing')"
+        (ngModelChange)="showValueRestTime($event, 'model')"
+        class="input-number-resttime"
+      ></d-input-number>
+    </div>
+  </div>
+  <div class="notifications">
+    <h3>提醒和通知</h3>
+    <div class="showtodo">
+      <span><b>锁屏显示</b></span>
+      <d-toggle class="d-toggle" [checked]="true"></d-toggle>
+    </div>
+    <div class="alarm">
+      <span><b>提醒时间</b></span>
+      <div class="devui-input-group">
+        <input
+          class="devui-input"
+          placeholder="yyyy-MM-dd"
+          (focus)="datePicker1.toggle($event)"
+          name="dp"
+          [(ngModel)]="selectedDate2"
+          [showTime]="true"
+          autocomplete="off"
+          dDatepicker
+          #datePicker1="datepicker"
+          (selectedDateChange)="getValue($event)"
+          appendToBody
+        />
+        <div
+          class="devui-input-group-addon"
+          (click)="datePicker1.toggle($event)"
+        >
+          <i class="icon icon-calendar"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ringtone-selection">
+      <span><b>选择铃声</b></span>
+      <d-select 
+        [placeholder]="'默认铃声'"
+        [options]="music"
+      ></d-select>
+    </div>
+  </div>
+  <div class="opinions">
+    <h3>支持与鼓励</h3>
+    <d-accordion
+      [data]="menu"
+      class="menu"
+    ></d-accordion>
+  </div>
 </div>
 <div class="footer">
-  底部
+  <span><b>Version 1.0</b></span>
 </div>

@@ -1,0 +1,22 @@
+<div class="container">
+
+    <div class="header">
+        <d-tabs [type]="'options'" [(activeTab)]="tab2acticeID">
+            <d-tab id="tab1" title="今日" tabId="tab1">
+            <ng-template dTabContent>
+                <app-today></app-today>
+            </ng-template>
+            </d-tab>
+        
+            <d-tab id="tab2" title="累计" tabId="tab2" >
+            <ng-template dTabContent>
+                <app-add></app-add>
+            </ng-template>
+            </d-tab>
+        </d-tabs>
+    </div>
+
+    <d-button icon="icon-op-upload" bsStyle="text-dark">
+        上传
+    </d-button>
+</div>

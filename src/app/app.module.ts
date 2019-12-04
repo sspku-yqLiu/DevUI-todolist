@@ -12,6 +12,9 @@ import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodolistComponent } from './todolist/todolist.component';
 import { SettingComponent } from './setting/setting.component';
+import { AddComponent } from './components/add/add.component';
+import { HomeComponent } from './components/home/home.component';
+import { TodayComponent } from './components/today/today.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { SettingComponent } from './setting/setting.component';
     HeaderComponent,
     TaskComponent,
     TodolistComponent,
-    SettingComponent
+    SettingComponent,
+    AddComponent,
+    HomeComponent,
+    TodayComponent
   ],
   imports: [
     BrowserModule,

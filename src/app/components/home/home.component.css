@@ -1,0 +1,29 @@
+.container {
+    margin:0 auto;
+    width:440px;
+    height: 100vh;
+    margin: 0;
+    background: #f3f6f8;
+}
+.header {
+    margin:0 auto;
+    float: left;
+    border-radius: 4px;
+    height: 40px;
+    width:360px;
+    color: #c9a2a2;
+}
+
+.container d-button {
+    float:right;
+    padding:10px 10px 0 0;
+}
+
+.header d-tabs {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin-left: 100px;
+    line-height: 32px;
+    z-index: 1;
+}
